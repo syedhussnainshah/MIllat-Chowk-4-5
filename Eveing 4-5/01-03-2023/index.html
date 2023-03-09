@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Parent {
+            /* width: 100%; */
+            /* height: 100vh; */
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        nav {
+            /* width: 100%; */
+            background-color: blue;
+            padding: 10px;
+            height: 50%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav>ul {
+            background-color: green;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style: none;
+            padding: 10px;
+            width: 100%;
+        }
+
+        nav>ul>li {
+            padding: 10px;
+            color: white;
+            background-color: black;
+            margin: 3px;
+            transition: all 1s linear;
+            border: 1px solid red;
+        }
+
+        nav>ul>li:hover {
+            background-color: white;
+            color: black;
+            transform: rotateY(360deg);
+            /* opacity: 0.3; */
+            border-radius: 10px;
+        }
+
+        .Image {
+            background-color: yellow;
+            height: 23vh;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .Image>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Image:hover>img {
+            width: 120%;
+            height: 120%;
+            transition: all 1s linear;
+        }
+        button{
+           background-color: red;
+           color: white;
+           border-top-right-radius: 15px;
+           padding: 10px;
+           border: none;
+           margin: 5px;
+        }
+    </style>
+    <div class="Parent">
+        <nav>
+            <ul>
+                <li>HOme</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Login</li>
+                <li>Signup</li>
+                <li>Blog</li>
+            </ul>
+        </nav>
+    </div>
+    <button>Add</button>
+    <div class="Image">
+
+        <img src="./images/commingsoon.png" alt="">
+    </div>
+</body>
+
+</html>
